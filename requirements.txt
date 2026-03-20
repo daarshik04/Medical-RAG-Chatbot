@@ -1,0 +1,22 @@
+# ── Core LangChain ────────────────────────────────────────────────────────────
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+langchain-text-splitters>=0.3.0      # was MISSING in original — fixes "No module named langchain.text_splitter"
+langchain-huggingface>=0.1.0         # used for HuggingFaceEmbeddings (local, no API needed)
+langchain-groq>=0.2.0                # LLM provider
+
+# ── Vector store ──────────────────────────────────────────────────────────────
+faiss-cpu>=1.8.0
+
+# ── Document loading ──────────────────────────────────────────────────────────
+pypdf>=4.0.0
+
+# ── Local embeddings (no API key needed) ─────────────────────────────────────
+sentence-transformers>=3.0.0
+huggingface_hub>=0.23.0
+
+# ── Web server ────────────────────────────────────────────────────────────────
+flask>=3.0.0
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+python-dotenv>=1.0.0
